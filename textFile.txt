@@ -1,0 +1,6 @@
+https://t.me/NewLeadFromSiteBot
+1917377132:AAHX9W3TCLTzJLsMpUbfcWT_gYz_me1c0zI
+chat_id = -543392334
+https://api.telegram.org/bot<token>/НАЗВАНИЕ_МЕТОДА
+
+https://api.telegram.org/bot1917377132:AAHX9W3TCLTzJLsMpUbfcWT_gYz_me1c0zIen/sendMessage?text=тестпоапи&chat_id=-543392334

@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %} 
+	Простой 
+	одностраничный 
+	сайт
+{% endblock %}
+
+{% block index %}
+
+	<!-- карусель -->
+{% include 'carusel.html' %}
+
+	<!-- Контентное наполнение -->
+{% include 'content.html' %}
+  	
+  	<!-- Карточки --> <!-- Таблица -->
+{% include 'price.html' %}
+  	
+  	<!-- форма -->
+{% include 'form.html' %}
+
+
+  	<!-- Тест -->
+<!-- {% include 'test.html' %}
+ -->  	
+
+
+{% endblock %}

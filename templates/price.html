@@ -1,0 +1,59 @@
+<!-- Карточки -->
+<section>
+  		<div class="container">
+  			<h1 class="text-3 text-uppercase">Пакеты услуг</h1>
+  			<div class="row justify-content-center">
+  				{% for card in pc_descriptions  %}
+  				<div class="card product_card np-element-white card active">
+  					<!-- <div class="card__icon"></div> -->
+				  <div class="card__text">
+				    <h5 class="card-title text-center text-uppercase fw-bolder">{{ card.pc_title }}</h5>
+				    <p class="card-text">{{ card.pc_description }}</p>
+				    <h3 class="text-center">{{ card.pc_value }} ₽</h3>
+				  </div>
+				</div>
+				<!-- <div class="card product_card" style="width: 18rem; background-color: #c0c0c0;">
+				  <div class="card-body">
+				    <h5 class="card-title">SILVER</h5>
+				    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				    <h3>{{ pc_2 }} руб.</h3>
+				  </div>
+				</div>
+				<div class="card product_card" style="width: 18rem; background-color: #ffd700;">
+				  <div class="card-body">
+				    <h5 class="card-title">GOLD</h5>
+				    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+				    <h3>{{ pc_3 }} руб.</h3>
+				  </div>
+				</div> -->
+				{% endfor %}
+  			</div>
+  		</div>
+  	</section>
+
+
+
+	<!-- Таблица -->
+  	<section>
+  		<div class="container">
+  			<h1 class="text-3 text-uppercase">Акции и скидки на услуги</h1>
+  			<table class="np-table np-0-8x table table-hover table-borderless">
+			  <thead>
+			    <tr class="np-table-heading">
+			      <th scope="col">Услуга</th>
+			      <th scope="col">Старая цена</th>
+			      <th scope="col">Новая цена</th>
+			    </tr>
+			  </thead>
+			  <tbody>
+			  {% for obj in price_table %}
+			    <tr class="np-table-row">
+			      <td>{{ obj.pt_title  }}</td>
+			      <td style="color: red;"><del>{{ obj.pt_old_price  }} ₽</del></td>
+			      <td style="color: seagreen;">{{ obj.pt_new_price  }} ₽</td>
+			    </tr>
+			    {% endfor %}
+			  </tbody>
+			</table>
+  		</div>
+  	</section>

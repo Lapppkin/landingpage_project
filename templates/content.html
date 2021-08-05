@@ -1,0 +1,21 @@
+<!-- Контентное наполнение -->
+	<section>
+  		<div class="container">
+  			<h1 class="text-3 text-uppercase fw-bold">Описание услуг</h1>
+  			<div class="row justify-content-center">
+  				{% for prdct in products_card  %}
+  				<div class="card product_card np-element-white" style="width: 18rem;">
+  					<img src="{{ prdct.prdct_img.url }}" class="card-img-top" alt="...">
+  				<div class="card-body">
+    				<h5 class="card-title">{{ prdct.prdct_title }}</h5>
+    				<p class="card-text">{{ prdct.prdct_description }}</p>
+    				
+  				</div>
+				</div>
+				{% endfor %}
+				
+				
+			</div>
+		</div>
+	</section>
+
